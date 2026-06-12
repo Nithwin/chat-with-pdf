@@ -1,0 +1,7 @@
+Python is a programming language.
+
+FastAPI is a framework used to build APIs.
+
+RAG stands for Retrieval-Augmented Generation.
+
+Embeddings convert text into vectors representing semantic meaning.
