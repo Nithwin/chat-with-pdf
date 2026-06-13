@@ -37,8 +37,6 @@ with open("embeddings.json", "r") as file:
 for chunk in chunk_embeddings:
     similarity = cosine_similarity(chunk["embedding"], question_embedding)
 
-    #print(f"Similarity: {similarity}")
-
     if similarity > best_score:
         best_score = similarity
         best_chunk = chunk["text"]
