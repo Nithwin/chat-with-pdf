@@ -113,3 +113,7 @@ venv.bak/
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+# Project-specific generated database and cache
+chromadb/
+embeddings.json

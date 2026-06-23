@@ -26,7 +26,7 @@ with open("sample_document.txt", 'r') as file:
 
     chunks = document.split("\n\n")
     
-    for id, chunk in enumerate(chunks):
+    for i, chunk in enumerate(chunks):
         response = client.models.embed_content(
             model="gemini-embedding-001",
             contents=chunk,
@@ -36,7 +36,7 @@ with open("sample_document.txt", 'r') as file:
 
         embeddings.append(embedding)
         documents.append(chunk)
-        ids.append(f"chunk_{id}")
+        ids.append(f"chunk_{i}")
 
 
 collection.add(
